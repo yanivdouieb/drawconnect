@@ -6,7 +6,8 @@ const path = require("path")
 const editJsonFile = require("edit-json-file");
 
 app.set("views", path.join(__dirname, "dist/html"))
-app.set("view engine", "ejs")
+app.set('view engine','ejs'); 
+app.engine('ejs', require('ejs').__express);
 app.use(cors())
 
 app.get('/', (req, res) => {
