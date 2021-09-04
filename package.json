@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node ."
+    "start": "node index.js"
   },
   "author": "Yaniv DOUIEB",
   "license": "ISC",
