@@ -1,10 +1,10 @@
 {
-  "name": "entp",
+  "name": "drawconnect",
   "version": "1.0.0",
-  "description": "Espace Numérique de Travail Privé",
-  "main": "index.js",
+  "description": "",
+  "main": "./functions/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ."
   },
   "author": "Yaniv DOUIEB",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "edit-json-file": "^1.6.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "nodemon": "^2.0.12",
     "serverless-http": "^2.7.0"
   }
 }
