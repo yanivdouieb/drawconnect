@@ -91,4 +91,5 @@ app.get('/api/draw/:id', (req, res) => {
 app.get('/robots.txt', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/robots.txt'))
 })
-app.listen(3000, () => {})
+app.listen(3000, () => {
+console.log('port 3000')})
