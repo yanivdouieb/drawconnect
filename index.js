@@ -91,4 +91,4 @@ app.get('/api/draw/:id', (req, res) => {
 app.get('/robots.txt', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/robots.txt'))
 })
-app.listen(80, () => {})
+app.listen(3000, () => {})
