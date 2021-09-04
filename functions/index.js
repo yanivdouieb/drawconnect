@@ -6,15 +6,14 @@ const path = require("path")
 const editJsonFile = require("edit-json-file");
 
 app.set("views", path.join(__dirname, "dist/html"))
-app.set('view engine','ejs'); 
-app.engine('ejs', require('ejs').__express);
+app.set("view engine", "ejs")
 app.use(cors())
 
 app.get('/', (req, res) => {
-    res.render('index')
+    res.sendFile(path.join(__dirname, 'dist/html/index.html'))
 })
 app.get('/mobile/', (req, res) => {
-    res.render('mobile')
+    res.sendFile(path.join(__dirname, 'dist/html/mobile.html'))
 })
 app.post('/api/id/', (req, res) => {
     const id = req.headers.id
@@ -62,10 +61,10 @@ app.get('/api/connexion/:id', (req, res) => {
     }
 })
 app.get('/panel/mobile', (req, res) => {
-    res.render('panelMobile.ejs')
+    res.sendFile(path.join(__dirname, 'dist/html/panelMobile.html'))
 })
 app.get('/panel/desktop', (req, res) => {
-    res.render('panelDesktop.ejs')
+    res.sendFile(path.join(__dirname, 'dist/html/panelDesktop.html'))
 })
 app.post('/api/draw/:id', (req, res) => {
     const id = req.params.id
